@@ -1,10 +1,11 @@
+using System.IO;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.EntityFrameworkCore;
 using Notes.Identity.Data;
 using Notes.Identity.Models;
@@ -55,6 +56,8 @@ namespace Notes.Identity
                 config.LogoutPath = "/Auth/Logout";
             });
 
+            services.AddControllersWithViews();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -65,14 +68,17 @@ namespace Notes.Identity
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(env.ContentRootPath, "Styles")),
+                RequestPath = "/styles"
+            });
             app.UseRouting();
             app.UseIdentityServer();
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
+                endpoints.MapDefaultControllerRoute();
             });
         }
     }

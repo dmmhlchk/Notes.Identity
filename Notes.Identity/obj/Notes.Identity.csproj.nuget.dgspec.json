@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Visual Studio\\Projects\\WebAPI\\Notes.Identity\\Notes.Identity\\Notes.Identity.csproj": {}
+    "E:\\Projects\\WebAPI\\Notes.Identity\\Notes.Identity\\Notes.Identity.csproj": {}
   },
   "projects": {
-    "E:\\Visual Studio\\Projects\\WebAPI\\Notes.Identity\\Notes.Identity\\Notes.Identity.csproj": {
+    "E:\\Projects\\WebAPI\\Notes.Identity\\Notes.Identity\\Notes.Identity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Visual Studio\\Projects\\WebAPI\\Notes.Identity\\Notes.Identity\\Notes.Identity.csproj",
+        "projectUniqueName": "E:\\Projects\\WebAPI\\Notes.Identity\\Notes.Identity\\Notes.Identity.csproj",
         "projectName": "Notes.Identity",
-        "projectPath": "E:\\Visual Studio\\Projects\\WebAPI\\Notes.Identity\\Notes.Identity\\Notes.Identity.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "E:\\Visual Studio\\Projects\\WebAPI\\Notes.Identity\\Notes.Identity\\obj\\",
+        "projectPath": "E:\\Projects\\WebAPI\\Notes.Identity\\Notes.Identity\\Notes.Identity.csproj",
+        "packagesPath": "C:\\Users\\dmmhlchk_PC\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\WebAPI\\Notes.Identity\\Notes.Identity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dmmhlchk_PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -79,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
